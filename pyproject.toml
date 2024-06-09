@@ -1,0 +1,17 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=64.0.0", "setuptools_scm>=6.2.0"]
+
+[project]
+name = 'adversarial-images'
+description = 'A package for generating adversarial images for PyTorch classification models.'
+readme = 'README.md'
+requires-python = '>= 3.11'
+authors = [{name = 'Emil Nichita'}]
+maintainers = [{name = 'Emil Nichita'}]
+
+dynamic = ['version']
+
+dependencies = [
+    'numpy<2.0.0',
+]
